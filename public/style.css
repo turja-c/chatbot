@@ -1,11 +1,25 @@
 html, body {
     text-align: center;
     font-family: 'Avenir Next', 'Helvetica', 'Arial', sans-serif;
+    color: white;
   }
 
-  html,body,li,form,ul {
+  body {
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    vertical-align: baseline;
+    height: max-content;
+  }
+
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  html,li,form,ul {
     padding: 0;
     margin: 0;
+    text-align: center;
   }
 
   form {
@@ -13,10 +27,63 @@ html, body {
   }
 
   li {
+    display:inline-block;
+    *display:inline; 
+    *zoom:1; 
+    background:rgb(106, 106, 212);
+    color:white;
+    margin-right:10px;
     list-style: none;
-    width: 100vw;
+    width: 45vw;
+    align-items: center;
   }
 
   li:nth-child(odd) {
-    background: #eee;
+    background: purple;
   }
+
+  .bg-img {
+    background-image: url("background.jpg");
+    min-height: 830px;
+    background-position: center;
+    background-size: cover;
+    position: static;
+  }
+
+  .container {
+    display:inline-block;
+    position: static;
+    right: 0;
+    margin: 10px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+
+  input[type=text], input[type=password] {
+    width: 65%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .btn {
+    background-color: #5292af;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
