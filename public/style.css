@@ -27,15 +27,17 @@ html, body {
   }
 
   li {
-    display:inline-block;
+    display: inline-block;
     *display:inline; 
     *zoom:1; 
     background:rgb(106, 106, 212);
     color:white;
-    margin-right:10px;
+    margin-right:20px;
     list-style: none;
-    width: 45vw;
+    width: 50%;
     align-items: center;
+    /* padding: 2px; */
+    margin-top: 5px;
   }
 
   li:nth-child(odd) {
@@ -44,7 +46,8 @@ html, body {
 
   .bg-img {
     background-image: url("background.jpg");
-    min-height: 830px;
+    height: 850px;
+    margin-top: 0px;
     background-position: center;
     background-size: cover;
     position: static;
@@ -60,7 +63,7 @@ html, body {
     background-color: white;
   }
 
-  input[type=text], input[type=password] {
+  input[type=text] {
     width: 65%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -68,7 +71,7 @@ html, body {
     background: #f1f1f1;
   }
   
-  input[type=text]:focus, input[type=password]:focus {
+  input[type=text]:focus{
     background-color: #ddd;
     outline: none;
   }
